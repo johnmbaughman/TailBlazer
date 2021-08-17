@@ -14,6 +14,5 @@ namespace TailBlazer.Infrastucture
         {
             MainThread = new DispatcherScheduler(dispatcher);
         }
-
     }
 }

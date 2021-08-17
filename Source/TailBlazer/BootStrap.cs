@@ -35,7 +35,7 @@ namespace TailBlazer
             var window = factory.Create(args);
             tempWindowToGetDispatcher.Close();
 
-            var layoutServce = container.GetInstance<ILayoutService>();
+            var layoutService = container.GetInstance<ILayoutService>();
             var scheduler = container.GetInstance<ISchedulerProvider>();
             scheduler.MainThread.Schedule(window.Show);
 
